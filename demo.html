@@ -385,6 +385,14 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
 .split>.hes img{max-height:none}
 .hero2 h1{font-size:clamp(3rem,7.2vw,6.8rem);max-width:13ch}
 .tcard .avatar{width:160px;height:160px;font-size:3rem}
+
+/* histoire : images alternées, cadre fixe, sans recadrage */
+.story .pin{aspect-ratio:4/5;max-height:80vh;position:sticky;background:#090908;border-radius:14px;overflow:hidden}
+.story .pi{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;overflow:hidden}.story .pi.on{opacity:1}
+.story .pi::before{content:"";position:absolute;inset:-8%;background:var(--b) center/cover;filter:blur(40px) brightness(.55)}
+.story .pi img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.story .ill{position:absolute;left:12px;bottom:10px;z-index:2;font:500 .62rem var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:#d8cfbb;opacity:.8;text-shadow:0 1px 4px #000}
+@media(max-width:900px){.story .pin{position:relative;top:0;aspect-ratio:4/5;max-height:none}}
 </style></head><body><div class="notebar" role="note"><strong>Concept d'étudiants</strong> · MenuVue n'existe pas encore. Plats, données, prix et traductions sont des exemples de démonstration.</div><header class="hdr"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.8" stroke-linejoin="round"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9a96e"/><stop offset="1" stop-color="#8fae8a"/></linearGradient></defs><path d="M12 2.5 3.5 7.2v9.6l8.5 4.7 8.5-4.7V7.2z"/><path d="M3.5 7.2 12 12l8.5-4.8M12 12v9.5"/></svg><span>MenuVue</span></a><nav class="nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="demo.html" aria-current="page">Démo 3D</a><a href="allergenes.html">Allergènes</a><a href="offres.html">Offres</a><a href="projet.html">Vision &amp; équipe</a><a href="contact.html">Contact</a></nav></div></header><main>
 <section class="sec" style="padding-top:clamp(24px,4vw,48px)"><div class="wrap">
  <header class="rv"><span class="eyebrow">Démo interactive</span><h1 style="font-size:clamp(2.4rem,5.4vw,4rem)">Un menu que l'on <span class="g">retourne</span> avec le doigt</h1><p class="lead" id="intro">Faites tourner le plat, décomposez-le avec le curseur, touchez une couche pour voir ce que c'est, ses calories et ses allergènes.</p></header>

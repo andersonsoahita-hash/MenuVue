@@ -385,6 +385,14 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
 .split>.hes img{max-height:none}
 .hero2 h1{font-size:clamp(3rem,7.2vw,6.8rem);max-width:13ch}
 .tcard .avatar{width:160px;height:160px;font-size:3rem}
+
+/* histoire : images alternées, cadre fixe, sans recadrage */
+.story .pin{aspect-ratio:4/5;max-height:80vh;position:sticky;background:#090908;border-radius:14px;overflow:hidden}
+.story .pi{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;overflow:hidden}.story .pi.on{opacity:1}
+.story .pi::before{content:"";position:absolute;inset:-8%;background:var(--b) center/cover;filter:blur(40px) brightness(.55)}
+.story .pi img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.story .ill{position:absolute;left:12px;bottom:10px;z-index:2;font:500 .62rem var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:#d8cfbb;opacity:.8;text-shadow:0 1px 4px #000}
+@media(max-width:900px){.story .pin{position:relative;top:0;aspect-ratio:4/5;max-height:none}}
 </style><div class="notebar" role="note"><strong>Concept d'étudiants</strong> · MenuVue n'existe pas encore. Plats, données, prix et traductions sont des exemples de démonstration.</div><header class="hdr"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.8" stroke-linejoin="round"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9a96e"/><stop offset="1" stop-color="#8fae8a"/></linearGradient></defs><path d="M12 2.5 3.5 7.2v9.6l8.5 4.7 8.5-4.7V7.2z"/><path d="M3.5 7.2 12 12l8.5-4.8M12 12v9.5"/></svg><span>MenuVue</span></a><nav class="nav" aria-label="Navigation principale"><a href="index.html" aria-current="page">Accueil</a><a href="demo.html">Démo 3D</a><a href="allergenes.html">Allergènes</a><a href="offres.html">Offres</a><a href="projet.html">Vision &amp; équipe</a><a href="contact.html">Contact</a></nav></div></header><main>
 <section class="hero2" aria-label="Accueil">
  <div class="wrap in2">
@@ -416,8 +424,8 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
  <div class="plats" id="plats"></div>
 </div></section>
 
-<section class="sec light"><div class="wrap story">
- <div class="pin"><img src="img/new/scan.jpg" data-fb="img/scan.jpg" alt="Un client scanne le QR code posé sur la table"></div>
+<section class="sec dark2"><div class="wrap story">
+ <div class="pin"><div class="pi on"><img src="img/new/story-1.jpg" alt="Un client scanne le QR code posé sur la table (illustration)"></div><div class="pi"><img src="img/new/story-2.jpg" alt="Le plat apparaît en volume au-dessus du téléphone (illustration)"></div><div class="pi"><img src="img/new/story-3.jpg" alt="Le client explore le plat en 3D avant de choisir (illustration)"></div><span class="ill">Illustrations générées par IA</span></div>
  <div>
   <div class="st on"><span class="n">01</span><h3>Scanner</h3><p class="lead">Un QR code posé sur la table ouvre le menu dans le navigateur. Aucune application à installer.</p></div>
   <div class="st"><span class="n">02</span><h3>Explorer</h3><p class="lead">Le plat tourne en 3D. Un doigt suffit pour le retourner, le décomposer et voir chaque ingrédient.</p></div>
@@ -442,7 +450,10 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
  <div class="grid4"><article class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2.5 3.5 7.2v9.6l8.5 4.7 8.5-4.7V7.2z"/><path d="M3.5 7.2 12 12l8.5-4.8M12 12v9.5"/></svg></span><h3>Voir en 3D</h3><p>Objectif du concept : un plat modélisé à partir d'un scan réalisé en cuisine, pas une photo retouchée.</p></article><article class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5z"/><path d="m8.5 12 2.5 2.5 5-5"/></svg></span><h3>Savoir ce qu'il contient</h3><p>Dans une vraie version, ingrédients et allergènes seraient fournis et vérifiés par chaque restaurant, plat par plat.</p></article><article class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3.2 3.4 3.2 15.6 0 19M12 2.5c-3.2 3.4-3.2 15.6 0 19"/></svg></span><h3>Comprendre la carte</h3><p>La carte se traduit dans les langues de la clientèle du restaurant.</p></article><article class="card rv"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 21h14M5 7h14M5 7l-3 7a3.5 3.5 0 0 0 6 0zM19 7l-3 7a3.5 3.5 0 0 0 6 0z"/></svg></span><h3>Choisir sa portion</h3><p>Poids, calories et macros s'ajustent selon la portion choisie.</p></article></div>
 </div></section>
 
-<section class="fullcta"><img src="img/new/final.jpg" alt=""><div class="wrap"><span class="eyebrow">Restaurants gastronomiques de Paris</span><h2>Montrez enfin vos plats comme ils le méritent</h2><p class="lead" style="color:#e6e0d5">Notre idée : scanner vos plats, faire valider chaque allergène par le chef, et vous laisser la main sur la carte. Concept en construction.</p><div class="cta" style="justify-content:center"><a class="btn" href="offres.html">Découvrir les offres</a><a class="btn ghost" style="color:#f5f0e8;border-color:rgba(245,240,232,.5)" href="contact.html">Nous contacter</a></div></div></section>
+<section class="sec dark2"><div class="wrap split">
+ <div class="txt rv"><span class="eyebrow">Restaurants gastronomiques de Paris</span><h2>Montrez enfin vos plats comme ils le méritent</h2><p class="lead">Notre idée : scanner vos plats, faire valider chaque allergène par le chef, et vous laisser la main sur la carte. Concept en construction.</p><div class="cta"><a class="btn" href="contact.html?p=restaurant">Demander une démonstration</a><a class="btn ghost" href="offres.html">Découvrir les offres</a></div></div>
+ <figure class="rv hes"><img src="img/new/final.jpg" alt="Un client explore un dessert en 3D sur son téléphone (illustration)" loading="lazy"><figcaption>Illustration générée par IA, non contractuelle.</figcaption></figure>
+</div></section>
 </main><footer><div class="wrap"><p><strong>Avertissement allergènes.</strong> Les informations d'allergènes, d'ingrédients et de calories affichées sont des exemples de démonstration et ne doivent jamais servir à choisir un repas. Dans une vraie version, ces informations seraient fournies et vérifiées par chaque restaurant. En cas d'allergie, demandez toujours au restaurant.</p><p>Images : illustrations générées par IA, non contractuelles. Aucun cookie, aucun suivi, aucune analyse tierce.</p><div id="equipe-pied">MenuVue · projet étudiant · Alwena Malgoures · Marwan Chehbi · Stephen Soahita · Saliha Thouvenin</div></div></footer><script src="vendor/three.min.js"></script><script>(function(){
   var de=document.documentElement; de.classList.add('js');
   var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -637,6 +648,7 @@ function bars(el,d,sel,onPick,mult){
  [].forEach.call(document.querySelectorAll('.ph-lang button'),function(bt){bt.addEventListener('click',function(){[].forEach.call(document.querySelectorAll('.ph-lang button'),function(x){x.classList.remove('on')});bt.classList.add('on');var t=T[bt.dataset.l];document.getElementById('phn').textContent=t[0];document.getElementById('phd').textContent=t[1];});});
  /* étapes : celle au centre de l'écran s'allume */
  var st=[].slice.call(document.querySelectorAll('.story .st'));
- function stp(){var mid=innerHeight*.5,best=0,bd=1e9;st.forEach(function(s,i){var r=s.getBoundingClientRect(),dd=Math.abs(r.top+r.height/2-mid);if(dd<bd){bd=dd;best=i;}});st.forEach(function(s,i){s.classList.toggle('on',i===best);});}
+ [].forEach.call(document.querySelectorAll('.story .pi'),function(p){p.style.setProperty('--b','url('+p.querySelector('img').getAttribute('src')+')')});
+ function stp(){var mid=innerHeight*.5,best=0,bd=1e9;st.forEach(function(s,i){var r=s.getBoundingClientRect(),dd=Math.abs(r.top+r.height/2-mid);if(dd<bd){bd=dd;best=i;}});st.forEach(function(s,i){s.classList.toggle('on',i===best);});[].forEach.call(document.querySelectorAll('.story .pi'),function(p,i){p.classList.toggle('on',i===best)});}
  addEventListener('scroll',stp,{passive:true});stp();
 })();</script>
