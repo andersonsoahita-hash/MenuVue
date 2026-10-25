@@ -19,5 +19,8 @@ Site vitrine du devoir de groupe « Stratégie d'Entreprise & Business Plan ».
 ## Publier avec GitHub Pages
 Settings → Pages → Source : branche `main`, dossier `/ (root)`.
 
+## Photos
+Seule la photo de Stephen est publiée. Les autres portraits ne seront ajoutés qu’avec l’accord écrit de chaque personne.
+
 ## Ce qui a été testé
 Playwright sur ordinateur (Chromium, rendu logiciel), fenêtres de 1280 px et 400 px. **Aucun test sur un vrai téléphone.**

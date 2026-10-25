@@ -363,6 +363,28 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
 #st{min-height:1.4em;margin:0}#st.err{color:#e08a85}#st.ok{color:#a9c9a4}.fine{font-size:.82rem;opacity:.7;margin:0}[hidden]{display:none!important}
 .q2{left:auto;right:-6px;top:52%}
 @media(max-width:520px){.q2{right:0}}
+
+/* hero : la solution */
+.hero2{align-items:center;background:radial-gradient(ellipse at 78% 45%,#2a2318 0%,#0e0d0c 62%)}.hero2::before{display:none}
+.hero2 .in2{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;padding-block:130px 70px;gap:clamp(24px,5vw,80px)}
+.phwrap{position:relative;display:grid;justify-items:center;gap:14px}
+.phone{width:min(300px,100%);background:#0a0a09;border:1px solid #3a342a;border-radius:38px;padding:11px;box-shadow:0 50px 90px -30px #000,0 0 0 6px #141210;position:relative}
+.pn{position:absolute;top:18px;left:50%;transform:translateX(-50%);width:78px;height:20px;border-radius:12px;background:#000;z-index:2}
+.scr{background:#171513;border-radius:28px;padding:42px 14px 16px;display:grid;gap:10px;color:var(--fg);min-height:540px;align-content:start}
+.ph-top{display:flex;justify-content:space-between;align-items:baseline}.ph-top b{font:500 1.05rem var(--f-display);letter-spacing:.04em}.ph-top span{font:600 .56rem var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ph-img{width:100%;height:auto;display:block;border-radius:8px}
+.ph-tabs{display:flex;gap:6px}.ph-tabs span{flex:1;text-align:center;padding:7px 0;border:1px solid var(--line);font:600 .6rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:#9a927f}.ph-tabs .on{border-color:var(--gold);color:var(--gold2)}
+.scr h3{font:500 1.5rem/1.1 var(--f-display);margin:2px 0 0}.scr p{font:300 .86rem/1.45 var(--f-body);color:#cfc7b6;margin:0;min-height:3.9em}
+.ph-row{display:flex;flex-wrap:wrap;gap:6px}.chip{padding:6px 10px;border:1px solid var(--line);font:500 .66rem var(--f-body);letter-spacing:.06em;color:#e6dfd0}.chip.a{border-color:var(--wine);color:#e7a9a5}
+.ph-lang{display:flex;gap:6px;margin-top:2px}.ph-lang button{flex:1;background:transparent;border:1px solid var(--line);color:#cfc7b6;padding:8px 0;font:600 .68rem var(--f-body);letter-spacing:.1em;cursor:pointer}.ph-lang .on{background:var(--gold);color:#171513;border-color:var(--gold)}
+.qrbox{position:absolute;left:-6%;bottom:8%;width:118px;background:#f4efe6;padding:9px;border-radius:4px;box-shadow:0 24px 40px -14px #000;display:grid;gap:5px;z-index:3;transform:rotate(-5deg)}.qrbox svg{width:100%;height:auto;display:block}.qrbox span{font:600 .5rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:#6b5b3a;text-align:center}
+.phnote{font:500 .68rem var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:#9a927f;margin:0;text-align:center}
+@media (max-width:900px){.hero2{display:block}.hero2 .in2{grid-template-columns:minmax(0,1fr);padding-block:40px 50px}.qrbox{left:0;width:96px}}
+.tph{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin-bottom:18px;border:1px solid var(--gold)}
+.hes{margin:0;display:grid;gap:10px}.hes img{width:100%;height:auto;border-radius:10px;display:block}.hes figcaption{font:500 .7rem var(--f-body);letter-spacing:.1em;color:#9a927f}
+.split>.hes img{max-height:none}
+.hero2 h1{font-size:clamp(3rem,7.2vw,6.8rem);max-width:13ch}
+.tcard .avatar{width:160px;height:160px;font-size:3rem}
 </style></head><body><div class="notebar" role="note"><strong>Concept d'étudiants</strong> · MenuVue n'existe pas encore. Plats, données, prix et traductions sont des exemples de démonstration.</div><header class="hdr"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.8" stroke-linejoin="round"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9a96e"/><stop offset="1" stop-color="#8fae8a"/></linearGradient></defs><path d="M12 2.5 3.5 7.2v9.6l8.5 4.7 8.5-4.7V7.2z"/><path d="M3.5 7.2 12 12l8.5-4.8M12 12v9.5"/></svg><span>MenuVue</span></a><nav class="nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="demo.html" aria-current="page">Démo 3D</a><a href="allergenes.html">Allergènes</a><a href="offres.html">Offres</a><a href="projet.html">Vision &amp; équipe</a><a href="contact.html">Contact</a></nav></div></header><main>
 <section class="sec" style="padding-top:clamp(24px,4vw,48px)"><div class="wrap">
  <header class="rv"><span class="eyebrow">Démo interactive</span><h1 style="font-size:clamp(2.4rem,5.4vw,4rem)">Un menu que l'on <span class="g">retourne</span> avec le doigt</h1><p class="lead" id="intro">Faites tourner le plat, décomposez-le avec le curseur, touchez une couche pour voir ce que c'est, ses calories et ses allergènes.</p></header>

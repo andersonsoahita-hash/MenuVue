@@ -363,20 +363,49 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
 #st{min-height:1.4em;margin:0}#st.err{color:#e08a85}#st.ok{color:#a9c9a4}.fine{font-size:.82rem;opacity:.7;margin:0}[hidden]{display:none!important}
 .q2{left:auto;right:-6px;top:52%}
 @media(max-width:520px){.q2{right:0}}
+
+/* hero : la solution */
+.hero2{align-items:center;background:radial-gradient(ellipse at 78% 45%,#2a2318 0%,#0e0d0c 62%)}.hero2::before{display:none}
+.hero2 .in2{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;padding-block:130px 70px;gap:clamp(24px,5vw,80px)}
+.phwrap{position:relative;display:grid;justify-items:center;gap:14px}
+.phone{width:min(300px,100%);background:#0a0a09;border:1px solid #3a342a;border-radius:38px;padding:11px;box-shadow:0 50px 90px -30px #000,0 0 0 6px #141210;position:relative}
+.pn{position:absolute;top:18px;left:50%;transform:translateX(-50%);width:78px;height:20px;border-radius:12px;background:#000;z-index:2}
+.scr{background:#171513;border-radius:28px;padding:42px 14px 16px;display:grid;gap:10px;color:var(--fg);min-height:540px;align-content:start}
+.ph-top{display:flex;justify-content:space-between;align-items:baseline}.ph-top b{font:500 1.05rem var(--f-display);letter-spacing:.04em}.ph-top span{font:600 .56rem var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ph-img{width:100%;height:auto;display:block;border-radius:8px}
+.ph-tabs{display:flex;gap:6px}.ph-tabs span{flex:1;text-align:center;padding:7px 0;border:1px solid var(--line);font:600 .6rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:#9a927f}.ph-tabs .on{border-color:var(--gold);color:var(--gold2)}
+.scr h3{font:500 1.5rem/1.1 var(--f-display);margin:2px 0 0}.scr p{font:300 .86rem/1.45 var(--f-body);color:#cfc7b6;margin:0;min-height:3.9em}
+.ph-row{display:flex;flex-wrap:wrap;gap:6px}.chip{padding:6px 10px;border:1px solid var(--line);font:500 .66rem var(--f-body);letter-spacing:.06em;color:#e6dfd0}.chip.a{border-color:var(--wine);color:#e7a9a5}
+.ph-lang{display:flex;gap:6px;margin-top:2px}.ph-lang button{flex:1;background:transparent;border:1px solid var(--line);color:#cfc7b6;padding:8px 0;font:600 .68rem var(--f-body);letter-spacing:.1em;cursor:pointer}.ph-lang .on{background:var(--gold);color:#171513;border-color:var(--gold)}
+.qrbox{position:absolute;left:-6%;bottom:8%;width:118px;background:#f4efe6;padding:9px;border-radius:4px;box-shadow:0 24px 40px -14px #000;display:grid;gap:5px;z-index:3;transform:rotate(-5deg)}.qrbox svg{width:100%;height:auto;display:block}.qrbox span{font:600 .5rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:#6b5b3a;text-align:center}
+.phnote{font:500 .68rem var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:#9a927f;margin:0;text-align:center}
+@media (max-width:900px){.hero2{display:block}.hero2 .in2{grid-template-columns:minmax(0,1fr);padding-block:40px 50px}.qrbox{left:0;width:96px}}
+.tph{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin-bottom:18px;border:1px solid var(--gold)}
+.hes{margin:0;display:grid;gap:10px}.hes img{width:100%;height:auto;border-radius:10px;display:block}.hes figcaption{font:500 .7rem var(--f-body);letter-spacing:.1em;color:#9a927f}
+.split>.hes img{max-height:none}
+.hero2 h1{font-size:clamp(3rem,7.2vw,6.8rem);max-width:13ch}
+.tcard .avatar{width:160px;height:160px;font-size:3rem}
 </style><div class="notebar" role="note"><strong>Concept d'étudiants</strong> · MenuVue n'existe pas encore. Plats, données, prix et traductions sont des exemples de démonstration.</div><header class="hdr"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.8" stroke-linejoin="round"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9a96e"/><stop offset="1" stop-color="#8fae8a"/></linearGradient></defs><path d="M12 2.5 3.5 7.2v9.6l8.5 4.7 8.5-4.7V7.2z"/><path d="M3.5 7.2 12 12l8.5-4.8M12 12v9.5"/></svg><span>MenuVue</span></a><nav class="nav" aria-label="Navigation principale"><a href="index.html" aria-current="page">Accueil</a><a href="demo.html">Démo 3D</a><a href="allergenes.html">Allergènes</a><a href="offres.html">Offres</a><a href="projet.html">Vision &amp; équipe</a><a href="contact.html">Contact</a></nav></div></header><main>
 <section class="hero2" aria-label="Accueil">
- <div class="sl" aria-hidden="true">
-  <div class="s on"><img src="img/new/hero-1.jpg" alt=""></div>
-  <div class="s"><img src="img/new/hero-2.jpg" alt=""></div>
- </div>
  <div class="wrap in2">
   <div>
-   <span class="eyebrow" style="animation:fade 1.2s .3s both">Restaurants gastronomiques · Paris</span>
+   <span class="eyebrow" style="animation:fade 1.2s .3s both">Menu numérique · Restaurants gastronomiques</span>
    <h1 style="margin-top:20px"><span class="ln"><span>Voyez le plat</span></span><span class="ln"><span>avant de le <span class="g">commander</span></span></span></h1>
-   <p class="sub">Un plat que l'on ne sait pas nommer ? MenuVue le montre en 3D, couche par couche, avec ses ingrédients, ses allergènes et sa traduction. MenuVue est un concept en construction : les plats montrés ici sont des exemples.</p>
+   <p class="sub">Le client scanne un QR code posé sur la table : il voit le plat en 3D, ses ingrédients, ses allergènes et sa traduction, dans sa langue. MenuVue est un concept en construction : l'écran présenté ici est une maquette.</p>
    <div class="cta"><a class="btn" href="demo.html">Essayer la démo 3D</a><a class="btn ghost" style="color:#f5f0e8;border-color:rgba(245,240,232,.5)" href="offres.html">Pour les restaurateurs</a></div>
   </div>
-  <div class="meta"><span id="hcap">Tournedos Rossini</span><div class="dots"><i class="on"></i><i></i></div><span class="scrollcue">Défiler</span></div>
+  <div class="phwrap" aria-label="Exemple d'écran MenuVue">
+   <div class="qrbox" aria-hidden="true"><svg viewBox="0 0 21 21" shape-rendering="crispEdges"><path fill="#f4efe6" d="M0 0h21v21H0z"/><g fill="#171513"><path d="M1 1h7v7H1zM13 1h7v7h-7zM1 13h7v7H1z"/></g><g fill="#f4efe6"><path d="M2 2h5v5H2zM14 2h5v5h-5zM2 14h5v5H2z"/></g><g fill="#171513"><path d="M3 3h3v3H3zM15 3h3v3h-3zM3 15h3v3H3zM10 1h2v2h-2zM9 4h2v2H9zM11 7h2v2h-2zM9 10h3v2H9zM13 10h2v2h-2zM16 10h4v2h-4zM10 14h2v3h-2zM13 13h3v2h-3zM17 14h3v2h-3zM14 17h2v3h-2zM18 18h2v2h-2zM10 19h2v1h-2z"/></g></svg><span>QR · exemple</span></div>
+   <div class="phone"><div class="pn"></div><div class="scr">
+    <div class="ph-top"><b>Le Pavillon</b><span>carte · exemple</span></div>
+    <img class="ph-img" src="img/new/plat-rossini.jpg" alt="Exemple de plat gastronomique">
+    <div class="ph-tabs" role="tablist"><span class="on">Photo</span><span>3D</span><span>Coupe</span></div>
+    <h3 id="phn">Tournedos Rossini</h3><p id="phd">Filet de bœuf, foie gras poêlé, truffe, sauce Périgueux.</p>
+    <div class="ph-row"><span class="chip">≈ 780 kcal</span><span class="chip a">Gluten</span><span class="chip a">Lait</span><span class="chip a">Sulfites</span></div>
+    <div class="ph-lang" role="group" aria-label="Langue"><button class="on" data-l="fr">FR</button><button data-l="en">EN</button><button data-l="es">ES</button><button data-l="zh">中文</button></div>
+   </div></div>
+   <p class="phnote">Maquette de concept : plat, restaurant et valeurs fictifs.</p>
+  </div>
  </div>
 </section>
 
@@ -404,7 +433,7 @@ footer .wrap{flex-direction:column;gap:10px;justify-content:flex-start}footer p{
 </div></section>
 
 <section class="sec dark2"><div class="wrap split">
- <div class="rv"><div class="menucard" role="img" aria-label="Exemple : une carte de restaurant pleine de termes techniques, avec des questions sans réponse"><div class="mc"><div class="mc-h">Carte · exemple</div><ul><li><b>Ris de veau</b><span>meunière, jus corsé, câpres frites</span></li><li><b>Tournedos Rossini</b><span>foie gras poêlé, sauce Périgueux</span></li><li><b>Saint-Jacques</b><span>beurre blanc, émulsion de corail</span></li><li><b>Soufflé chaud</b><span>crème anglaise, sabayon</span></li></ul></div><span class="q q1">Quels allergènes ?</span><span class="q q2">À quoi ça ressemble ?</span><span class="q q3">Combien de calories ?</span></div></div>
+ <figure class="rv hes"><img src="img/hesite.jpg" alt="Une cliente hésite devant une carte de restaurant" loading="lazy"><figcaption>Illustration générée par IA, non contractuelle.</figcaption></figure>
  <div class="txt rv"><span class="eyebrow">Le problème</span><h2>Commander sans comprendre</h2><p class="lead">Une carte en langue inconnue, des allergènes peu lisibles, des photos absentes ou trompeuses : le moment de plaisir devient un pari, pour le visiteur comme pour le restaurateur.</p><p class="quote">« Est-ce vraiment ce que j'imagine ? »</p></div>
 </div></section>
 
@@ -604,8 +633,8 @@ function bars(el,d,sel,onPick,mult){
  addEventListener('mousemove',function(e){tx=e.clientX+28;ty=e.clientY-120;if(!act){act=true;cx=tx;cy=ty;loop();}});
  function loop(){cx+=(tx-cx)*.14;cy+=(ty-cy)*.14;fl.style.transform='translate3d('+cx.toFixed(1)+'px,'+cy.toFixed(1)+'px,0)';if(act)requestAnimationFrame(loop);}
  /* diaporama du hero */
- var sl=[].slice.call(document.querySelectorAll('.hero2 .sl .s'));sl.forEach(function(s){s.style.setProperty('--b','url('+s.querySelector('img').getAttribute('src')+')');}),dots=[].slice.call(document.querySelectorAll('.hero2 .dots i')),cap=['Tournedos Rossini','Saint-Jacques, chou-fleur et caviar'],k=0;
- if(!(matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){setInterval(function(){sl[k].classList.remove('on');dots[k].classList.remove('on');k=(k+1)%sl.length;sl[k].classList.add('on');void dots[k].offsetWidth;dots[k].classList.add('on');document.getElementById('hcap').textContent=cap[k];},6000);}
+ var T={fr:['Tournedos Rossini','Filet de bœuf, foie gras poêlé, truffe, sauce Périgueux.'],en:['Rossini tournedos','Beef fillet, pan-seared foie gras, truffle, Périgueux sauce.'],es:['Tournedó Rossini','Solomillo de ternera, foie gras a la plancha, trufa, salsa Périgueux.'],zh:['罗西尼牛排','牛里脊配煎鹅肝、松露与佩里格酱。']};
+ [].forEach.call(document.querySelectorAll('.ph-lang button'),function(bt){bt.addEventListener('click',function(){[].forEach.call(document.querySelectorAll('.ph-lang button'),function(x){x.classList.remove('on')});bt.classList.add('on');var t=T[bt.dataset.l];document.getElementById('phn').textContent=t[0];document.getElementById('phd').textContent=t[1];});});
  /* étapes : celle au centre de l'écran s'allume */
  var st=[].slice.call(document.querySelectorAll('.story .st'));
  function stp(){var mid=innerHeight*.5,best=0,bd=1e9;st.forEach(function(s,i){var r=s.getBoundingClientRect(),dd=Math.abs(r.top+r.height/2-mid);if(dd<bd){bd=dd;best=i;}});st.forEach(function(s,i){s.classList.toggle('on',i===best);});}
